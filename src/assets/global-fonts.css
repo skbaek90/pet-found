@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Typo';
+  src: url('@/assets/fonts/Typo/typo-round-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TypoBold';
+  src: url('@/assets/fonts/Typo/typo-round-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.price {
+	color: #00897B;
+}
+

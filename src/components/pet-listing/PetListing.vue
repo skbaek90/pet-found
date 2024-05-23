@@ -1,28 +1,18 @@
 <script setup>
 import Corgi from '@assets/pets/dogs/corgi-1.webp'
+import PetInfo from '@components/pet-listing/PetInfo.vue';
 </script>
 
 <template>
-	<div class="pet-listing-container row">
-		<div class="col">
+	<div class="pet-listing-container row g-0">
+		<div class="pet-image-container col-auto">
 			<img 
-				class="pet-picture"
+				class="pet-image"
 				:src="Corgi"
 			/>
 		</div>
-		<div class="pet-info col">
-			<div class="pet-price row">
-				$800
-			</div>
-			<div class="pet-listing-title row">
-				Cute Corgi, only 1 left!
-			</div>
-			<div class="location-and-time row">
-				Calgary | 3wks ago
-			</div>
-			<div class="pet-description row">
-				This is a test text, later replace this with something much longer. Preferably I want to truncate after two lines with ...
-			</div>
+		<div class="pet-info-container col">
+			<pet-info />
 		</div>
 	</div>
 </template>
@@ -30,10 +20,17 @@ import Corgi from '@assets/pets/dogs/corgi-1.webp'
 <style scoped lang="scss">
 .pet-listing-container {
 	border: 1px solid lightskyblue;
+	padding: 1rem;
+	margin: 0 5rem;
 
-	.pet-picture {
-		width: 250px;
-		height: 250px;
+	.pet-image-container {
+		padding-right: 1rem;
+
+		.pet-image {
+			width: 15rem;
+			height: 15rem;
+			border-radius: 1rem;
+		}
 	}
 }
 </style>

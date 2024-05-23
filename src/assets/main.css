@@ -1,6 +1,6 @@
 @import './base.css';
+@import './global-fonts.css';
 
-@font-face {
-  font-family: "Typo";
-  src: local("Typo"), url("@assets/fonts/Typo/typo-round-bold.otf") format("opentype") url("@assets/fonts/Typo/typo-round-regular.otf") format("opentype");
+body {
+	font-family: 'Typo', sans-serif;
 }
